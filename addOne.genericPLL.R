@@ -76,7 +76,7 @@ genericPLL.AddOne <- function(
   #columns are levels of par2, rows are levels of par1
   if(FALSE)matrix(testGrid.LL,nrow=length(par1Vals),ncol=length(par1Vals))
   
-  if(doPlots){
+  if(doPlots | FALSE){
     par(omi=c(0,0,0,0))
     
     plot(x=testGrid[,1],y=testGrid[,2],xlab=names(MLE.pars)[1],ylab=names(MLE.pars)[2])
@@ -84,7 +84,7 @@ genericPLL.AddOne <- function(
     lines(x=cLine$x,y=cLine$y,col="cyan",lwd=3)
     mtext(side=1,outer=TRUE,text=paste("Distribution:",distName),line=-1,adj=0)
     
-    library(rgl)
+    #library(rgl)
     open3d()
     baseRadius <- max(diff(range(testGrid[,1])),diff(range(testGrid[,2])),diff(range(as.vector(testGrid.HC05))))/200
     maxPoint <- which.max(as.vector(testGrid.HC05)[abs(testGrid.LL.vec)<CI.critval])
