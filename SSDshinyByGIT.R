@@ -55,7 +55,7 @@ if(FALSE){
   #one-liners that can be shared to launch the tool.  They all source this file, and should work
   #independent of OS, or R session from which it is run (terminal, Rgui, Rstudio).  Links will
   #show contents of this file, when used in a browser
-  devtools::source_url("https://raw.github.com/gcarrghub/BV-Shiny/master/shinyFromGIT.R")
+  devtools::source_url("https://raw.github.com/gcarrghub/SSD-Shiny/master/SSDshinyByGIT.R")
   devtools::source_url("https://github.com/gcarrghub/BV-Shiny/blob/master/shinyFromGIT.R?raw=TRUE")
   devtools::source_url("https://raw.githubusercontent.com/gcarrghub/BV-Shiny/master/shinyFromGIT.R?raw=TRUE")
 }
