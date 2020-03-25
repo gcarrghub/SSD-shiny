@@ -15,7 +15,7 @@ if(FALSE)cleanUp()
 #### Details given in if(FALSE){} blocks are details details
 #### Before running the tool need to check for required packages and install if necessary
 #### Typically should only need to do this once per installation of R
-packages = c("shiny", "openxlsx", "optimx", "plotrix","devtools")
+packages = c("shiny", "openxlsx", "optimx", "plotrix","devtools","ADGofTest")
 packageTests <- sapply(packages,FUN = require,character.only=TRUE)
 if(all(packageTests)){
   cat("\n",paste(rep("#",100),collapse = ""),
